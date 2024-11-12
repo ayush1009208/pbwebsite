@@ -288,7 +288,7 @@ const EventCard: React.FC = () => {
                 />
               </div>
               <button type="submit" className="submit-event-button">
-                Add Event
+                Add Even
               </button>
             </form>
           )}
