@@ -1,29 +1,42 @@
-#### Link to previous PB Website : [Github](https://github.com/pbdsce/landing-page) [Landing Page](https://www.pointblank.club/)
+Point Blank - Official Website Netlify Status
+Welcome to the Point Blank official website repository! This project serves as the landing page for Point Blank, showcasing our achievements, initiatives, and much more.
 
-#### List of Issues to get started on : [Issues](https://github.com/pbdsce/pbwebsite/issues)
+Quick Links
+Previous Website: GitHub | Live Landing Page
+Issues to Get Started: GitHub Issues
+Staging Branch Deploy : Staging Deployment
+Getting Started
+Follow the steps below to set up the project locally:
 
-## Getting Started
+1. Clone the Repository
+git clone https://github.com/pbdsce/pbwebsite.git
+cd pbwebsite
+2. Install Dependencies
+Install all required dependencies using your preferred package manager:
 
-1. Install all dependencies
-```bash
 npm install
-```
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+3. Set Up Firebase Configuration
+To connect the project to Firebase, you need a .env.local file in the root directory.
 
-2. Create a `.env.local` file in the root directory and add in the firebase config data to connect to firebase : 
-```
+Create the .env.local file:
 REACT_APP_FIREBASE_API_KEY=xxx
 REACT_APP_FIREBASE_AUTH_DOMAIN=xxx
 REACT_APP_FIREBASE_PROJECT_ID=xxx
 REACT_APP_FIREBASE_STORAGE_BUCKET=xxx
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=xxx
 REACT_APP_FIREBASE_APP_ID=xxx
-```
+Note: Replace the xxx values with the Firebase configuration keys.
+Contact one of the maintainers to obtain the Firebase config details.
 
-Contact any of the maintainers for the contents of the `.env.local` file
+4. Run the Development Server
+Start the development server with one of the following commands:
 
-Then, run the development server:
-
-```bash
 npm run dev
 # or
 yarn dev
@@ -31,25 +44,20 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+The application will be accessible at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Contributing
+Fork this repository.
+Create a new branch for your feature or bug fix:
+git checkout -b feature/<feature-name>
+Make your changes and commit them:
+git commit -m "Add feature: <feature-description>"
+Push your branch and submit a Pull Request to the main repository:
+git push origin feature/<feature-name>
+Check the Issues page for tasks you can pick up!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contact
+If you have any questions or need assistance, feel free to reach out to the maintainers.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Let’s build something amazing! 🚀
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
